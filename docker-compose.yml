@@ -30,6 +30,9 @@ services:
     environment:
       PMA_HOST: database
       MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+      UPLOAD_LIMIT: 1024M
+      MEMORY_LIMIT: 1024M
+      
     networks:
       - wordpress-network
 
